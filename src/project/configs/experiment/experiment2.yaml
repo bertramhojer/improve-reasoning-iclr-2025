@@ -1,0 +1,18 @@
+model:
+  path: "EleutherAI/pythia-160m"
+  name: "pythia-160m"
+  layer_id: 5
+  model_type: "pythia"
+params:
+  cv_type: "PCA-C"
+  eval_cv: "babi"
+  eval_type: "logit"
+  alpha: [-1, 1, 1]
+  batch_size: 32
+  normalize: false
+  standardize: true
+  samples: 100
+data:
+  task: "babi"
+  shots: 0
+  test_shots: 0

@@ -1,0 +1,3 @@
+defaults:
+  - experiment: experiment1
+  - _self_

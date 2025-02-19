@@ -1,0 +1,18 @@
+model:
+  path: "EleutherAI/pythia-14m"
+  name: "pythia-14m"
+  layer_id: 3
+  model_type: "pythia"
+params:
+  cv_type: "R"
+  eval_cv: "babi"
+  eval_type: "logit"
+  alpha: [-1, 1, 1]
+  batch_size: 16
+  normalize: false
+  standardize: true
+  samples: 100
+data:
+  task: "babi"
+  shots: 0
+  test_shots: 0

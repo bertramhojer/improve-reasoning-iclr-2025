@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repana-experiments"
+version = "0.0.1"
+description = "Experiments for Repana"
+authors = [
+    {name = "Højer" },
+    { name = "Jarvis"}
+]
+
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[project.scripts]
+test-lib = "project.tmp:main"
+train = "project.train:main"
+evaluate = "project.evaluate:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+line-length = 120
