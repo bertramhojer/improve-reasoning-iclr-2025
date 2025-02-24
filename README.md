@@ -8,17 +8,11 @@ We developed `repana` to extract hidden states and derive control vectors. The `
 
 ### Installation
 
-We manage our environment using `uv`. 
+We manage our environment using `uv`. Assuming you've cloned and navigated to the repository (and don't have `uv` installed), follow these steps to set up your environment.
 
 To install `uv` run:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-To set up the project run:
-```bash
-git clone <repository-url>
-cd <project-name>
 ```
 
 Create a virtual environment and activate it:
@@ -34,7 +28,19 @@ uv pip install -r requirements.txt
 
 ### Replication
 
+We manage hyperparameters using Hydra.
+
 To replicate our experiments follow these instructions:
+
+Deriving control-vectors based on the hyperparameters for experiment 1.
+```bash
+uv run train experiment=experiment1
+```
+
+Evaluating control-vectors based on the hyperparameters for experiment 1.
+```bash
+uv run evaluate experiment=experiment1
+```
 
 ## Citation
 
