@@ -11,24 +11,23 @@ We developed `repana` to extract hidden states and derive control vectors. The `
 We manage our environment using `uv`. 
 
 To install `uv` run:
-```
-#! bash
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 To set up the project run:
-```
+```bash
 git clone <repository-url>
 cd <project-name>
 ```
 
 Create a virtual environment and activate it:
-```
+```bash
 uv venv
 source .venv/bin/activate  # On Unix-like systems
 ```
 Install dependencies:
-```
+```bash
 # Install from requirements.txt
 uv pip install -r requirements.txt
 ```
