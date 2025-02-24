@@ -10,6 +10,29 @@ We developed `repana` to extract hidden states and derive control vectors. The `
 
 We manage our environment using `uv`. 
 
+To install `uv` run:
+```
+#! bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+To set up the project run:
+```
+git clone <repository-url>
+cd <project-name>
+```
+
+Create a virtual environment and activate it:
+```
+uv venv
+source .venv/bin/activate  # On Unix-like systems
+```
+Install dependencies:
+```
+# Install from requirements.txt
+uv pip install -r requirements.txt
+```
+
 ### Replication
 
 To replicate our experiments follow these instructions:
@@ -17,6 +40,7 @@ To replicate our experiments follow these instructions:
 ## Citation
 
 Please cite this work as:
+
 ```
 @inproceedings{hojerImprovingReasoningPerformanceLargeLanguage2025,
   title = {Improving {{Reasoning Performance}} in {{Large Language Models}} via {{Representation Engineering}}},

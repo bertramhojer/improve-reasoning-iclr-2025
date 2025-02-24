@@ -12,3 +12,5 @@ cv/*
 tests
 plots
 .env
+.DS_Store
+uv.lock
