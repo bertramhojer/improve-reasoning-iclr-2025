@@ -14,3 +14,4 @@ plots
 .env
 .DS_Store
 uv.lock
+src/project/modal-test.py

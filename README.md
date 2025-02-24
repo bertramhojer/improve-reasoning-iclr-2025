@@ -8,7 +8,7 @@ We developed `repana` to extract hidden states and derive control vectors. The `
 
 ### Installation
 
-We manage our environment using `uv`. Assuming you've cloned and navigated to the repository (and don't have `uv` installed), follow these steps to set up your environment.
+We manage our environment using `uv`. Assuming you've cloned and navigated to the repository (and don't have `uv` installed), follow these steps to set up your environment (unix systems).
 
 To install `uv` run:
 ```bash
@@ -28,9 +28,7 @@ uv pip install -r requirements.txt
 
 ### Replication
 
-We manage hyperparameters using Hydra.
-
-To replicate our experiments follow these instructions:
+We manage hyperparameters using Hydra. To replicate our experiments follow these instructions:
 
 Deriving control-vectors based on the hyperparameters for experiment 1.
 ```bash
