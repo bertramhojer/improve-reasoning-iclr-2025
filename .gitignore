@@ -10,3 +10,5 @@ results
 __pycache__
 cv/*
 tests
+plots
+.env

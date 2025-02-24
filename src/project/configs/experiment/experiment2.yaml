@@ -1,13 +1,13 @@
 model:
-  path: "EleutherAI/pythia-160m"
-  name: "pythia-160m"
+  path: "EleutherAI/pythia-410m"
+  name: "pythia-410m"
   layer_id: 5
   model_type: "pythia"
 params:
   cv_type: "PCA-C"
   eval_cv: "babi"
   eval_type: "logit"
-  alpha: [-1, 1, 1]
+  alpha: [-1, 1, .5]
   batch_size: 32
   normalize: false
   standardize: true
