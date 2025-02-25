@@ -26,6 +26,8 @@ Install dependencies:
 uv pip install -r requirements.txt
 ```
 
+Our experiments were run using the HPC at the IT University of Copenhagen. It was unfeasible to run the experiments with e.g. 7B parameter models locally. If you have a GPU avaiable the `repana` framework should automatically push your model to GPU, enabling you to run experiments with larger models.
+
 ### Replication
 
 We manage hyperparameters using Hydra. To replicate our experiments follow these instructions:
