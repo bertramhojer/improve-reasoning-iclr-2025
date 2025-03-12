@@ -48,10 +48,9 @@ Please cite this work as:
 
 ```
 @inproceedings{hojerImprovingReasoningPerformanceLargeLanguage2025,
-  title = {Improving {{Reasoning Performance}} in {{Large Language Models}} via {{Representation Engineering}}},
+  title = {Improving Reasoning Performance in Large Language Models via Representation Engineering},
   author = {Højer, Bertram and Jarvis, Oliver and Heinrich, Stefan},
-  date = {2025-01-02},
-  eventtitle = {International {{Conference}} on {{Learning Representations}}},
-  langid = {english}
+  date = {2025},
+  eventtitle = {The Thirteenth International {{Conference}} on {{Learning Representations}}},
 }
 ```
