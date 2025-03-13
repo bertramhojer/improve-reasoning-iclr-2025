@@ -42,6 +42,23 @@ Evaluating control-vectors based on the hyperparameters for experiment 1.
 uv run evaluate experiment=experiment1
 ```
 
+Experiments were run on the HPC provided by the IT University of Copenhagen. Experiments were run using singularity containers on the HPC.
+To run experiments using the same process on a different cluster you can build a docker image using the provided dockerfile:
+```bash
+docker buildx build --platform=linux/amd64 --load -t experiment-image:latest .
+```
+
+Save the docker image as a tar ball.
+```bash
+docker save experiment-image:latest -o experiment.tar
+```
+
+Either build the singularity container locally and push it an available HPC or push the .tar there and build the singularity container on the cluster.
+
+```bash
+singularity build experiment.sif docker-archive://experiment.tar
+```
+
 ## Citation
 
 Please cite this work as:
@@ -50,7 +67,8 @@ Please cite this work as:
 @inproceedings{hojerImprovingReasoningPerformanceLargeLanguage2025,
   title = {Improving Reasoning Performance in Large Language Models via Representation Engineering},
   author = {Højer, Bertram and Jarvis, Oliver and Heinrich, Stefan},
-  date = {2025},
+  date = {2025-01-02},
   eventtitle = {The Thirteenth International {{Conference}} on {{Learning Representations}}},
+  langid = {english}
 }
 ```

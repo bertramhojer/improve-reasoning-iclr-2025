@@ -7,8 +7,7 @@ name = "repana-experiments"
 version = "0.0.1"
 description = "Experiments for Repana"
 authors = [
-    {name = "Højer" },
-    { name = "Jarvis"}
+    {name = "Højer" }
 ]
 
 readme = "README.md"

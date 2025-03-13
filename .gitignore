@@ -15,3 +15,8 @@ plots
 .DS_Store
 uv.lock
 src/project/modal-test.py
+dist
+uv*
+*gitignore
+repana.tar
+*.lock
